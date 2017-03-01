@@ -70,6 +70,8 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(brew node npm history git git-flow laravel laravel5 zsh-syntax-highlighting)
 
+source $ZSH/oh-my-zsh.sh
+
 # User configuration
 
 # Load the shell dotfiles
@@ -89,8 +91,6 @@ fi
 #   hash gls >/dev/null 2>&1 && CLICOLOR_FORCE=1 gls -aFh --color --group-directories-first || ls
 # }
 # chpwd_functions=( auto-ls $chpwd_functions )
-
-source $ZSH/oh-my-zsh.sh
 
 # Source local extra (private) settings specific to machine if it exists
 [ -f ~/.zsh.local ] && source ~/.zsh.local
