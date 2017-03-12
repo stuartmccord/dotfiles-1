@@ -183,7 +183,7 @@ declare -a FILES_TO_SYMLINK=(
   'shell/gemrc'
   'shell/inputrc'
   'shell/screenrc'
-  'shell/vimrx'
+  'shell/vimrc'
 
   'git/gitattributes'
   'git/gitconfig'
