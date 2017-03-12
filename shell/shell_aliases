@@ -6,6 +6,11 @@
 # Enable aliases to be sudo’ed
 alias sudo="sudo "
 
+# Homebrew packages
+alias vim="/usr/local/bin/vim"
+alias vi="/usr/local/bin/vim"
+alias git="/usr/local/bin/git"
+
 # Shortcuts
 alias o="open"
 alias oo="open ."

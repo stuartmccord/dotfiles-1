@@ -6,6 +6,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'StanAngeloff/php.vim'
+Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()            " required
 
@@ -191,3 +192,16 @@ augroup phpSyntaxOverride
   autocmd!
   autocmd FileType php call PhpSyntaxOverride()
 augroup END
+
+"------------------------------------------------------------
+" Syntastic
+"
+"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
