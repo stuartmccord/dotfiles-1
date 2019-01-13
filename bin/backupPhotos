@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [ -d "/Volumes/Mac External/Pictures" ]; then
+    rsync -av ~/Pictures/* /Volumes/Mac\ External/Pictures
+else
+    echo "External Hard Drive not connected: not backing up photos"
+fi

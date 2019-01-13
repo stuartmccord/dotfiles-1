@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [ -d "/Volumes/Mac External/Music" ]; then
+    rsync -av ~/Music/* /Volumes/Mac\ External/Music
+else
+    echo "External Hard Drive not connected: not backing up music"
+fi
+
+rsync --recursive --copy-links --verbose --progress -e "ssh" ~/Music/* stuart@nas:/volume1/music/
